@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <!--  |---------------------------|
+       |      Meta Tags Here       |
+       |---------------------------| -->
+	<!--turn off IE compatibility mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Charecter set -->
+	<meta charset="utf-8">
+	<!-- View Port -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1" />
+
+ <!--  |---------------------------|
+       |    Website Onpage SEO     |
+       |---------------------------| -->
+	
+  <!-- this is title -->
+	<title>Arman Rahman</title>
+	<link rel="icon" type="image/x-icon" href="./images/logo.png">
+	<!-- Keyword -->
+	<meta name="Keyword" content=" No more than 10 keyword mdmajidulislam,">
+	<!-- Meta Description -->
+	<meta name="description" content="160 characters">
+
+ <!--  |---------------------------|
+       |    All Css File Here      |
+       |---------------------------| -->
+  <!--Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&	display=swap" rel="stylesheet">
+    <!-- css for bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- css for bootstrap 4-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- css for Fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- my css file -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="container">
+			<h1 class="text-center mt-5">CALCULATE YOUR AGE</h1>
+		</div>
+		<div class="row main justify-content-center align-items-center">
+			<div class="col form">
+				<form class="form-inline">
+					<div class="form-row">
+						<div class="col pt-1"><input id="b_day" class="form-control" type="text" placeholder="Enter Day"></div>
+						<div class="col">
+						<select class="custom-select my-1 mr-sm-2" id="b_month">
+							<option selected>Month</option>
+							<option value="1">January</option>
+							<option value="2">February</option>
+							<option value="3">March</option>
+							<option value="4">April</option>
+							<option value="5">May</option>
+							<option value="6">June</option>
+							<option value="7">July</option>
+							<option value="8">August</option>
+							<option value="9">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select>
+						</div>
+						<div class="col">
+						<select class="custom-select my-1 mr-sm-2" id="b_year">
+							<option selected>Year</option>
+							<option value="2005">2005</option>
+							<option value="2004">2004</option>
+							<option value="2003">2003</option>
+							<option value="2002">2002</option>
+							<option value="2001">2001</option>
+							<option value="2000">2000</option>
+							<option value="1999">1999</option>
+							<option value="1998">1998</option>
+							<option value="1997">1997</option>
+							<option value="1996">1996</option>
+							<option value="1995">1995</option>
+							<option value="1994">1994</option>
+							<option value="1993">1993</option>
+							<option value="1992">1992</option>
+							<option value="1991">1991</option>
+							<option value="1990">1990</option>
+							<option value="1989">1989</option>
+							<option value="2088">2088</option>
+							<option value="1987">1987</option>
+							<option value="1986">1986</option>
+							<option value="1985">1985</option>
+							<option value="1984">1984</option>
+							<option value="1983">1983</option>
+							<option value="1982">1982</option>
+							<option value="1981">1981</option>
+							<option value="1980">1980</option>
+						</select>
+						</div>
+					</div>
+				</form>
+				<div class="d-flex justify-content-center mt-4">
+					<button onclick="ageCalculation()" type="submit" class="btn btn-success my-1 text-center mx-2"><i class="fa-solid fa-calculator fa-shake"></i> Calculate</button>
+					<button onclick="reload()" type="submit" class="btn btn-info my-1 text-center mx-2"><i class="fa-solid fa-arrow-rotate-right fa-spin"></i> Again</button>
+				</div>
+
+				<div id="show" class="output">
+					<h2 class="text-center pt-5">Your Age:</h2>
+					<div class="d-flex justify-content-center">
+						<div class="output_block text-center"><div id="out_year"></div>Year</div>
+						<div class="output_block text-center"><div id="out_month"></div>Month</div>
+						<div class="output_block text-center"><div id="out_day"></div>Day</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+	 <!--|---------------------------|
+       |    All Js File Here       |
+       |---------------------------| -->
+	<!-- jQuery 3.5.1 Verson File -->
+	<script type="text/javascript" src="js/jquery.min.3.6.0"></script>
+	<!-- js for popper -->
+	<script type="text/javascript" src="js/popper.js"></script>
+	<!-- js fo bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<!-- js for fontawesome -->
+	<script type="text/javascript" src="js/all.min.js"></script>
+    <!-- My Js-->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap 4 CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

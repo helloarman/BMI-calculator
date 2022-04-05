@@ -1,0 +1,83 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: Arman Rahman
+	Template URL: www.armanrahman.info
+	Description: Personal Website
+	Author: Arman Rahman
+	Author URL: http://www.armanrahman.info
+	License: GNU General Public 
+	Version: 2022.0.1
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+	3. Getting Started
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+-----------------------------------------------------------------------------------*/
+/************** Variable ************************/
+:root{
+	--brand-color: #C84B31;
+	--brand-color2: #2D4263;
+    --brand-dark: #191919;
+    --brand-light: #ECDBBA;
+    --font-m: 'Montserrat', sans-serif
+}
+
+
+/************** Global ************************/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-m);
+	font-size: 14px;
+}
+
+body{
+	background-color: #f6f7fa;
+}
+
+.main{
+	height: 270px;
+	width: 500px;
+	margin: auto;
+}
+
+.form{
+	background-color: #FFBD35;
+	padding: 60px 40px;
+	border-radius: 10px;
+}
+
+h1{
+	font-size: 80px;
+	color: #dddddd;
+}
+
+.output_block{
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 10px;
+	font-size: 10px;
+	font-weight: 800;
+}
+
+.output{
+	display: none;
+}
+
+.output_show{
+	display: block !important;
+}
+
+h2{
+	font-size: 14px;
+	font-weight: 800;
+}
+
