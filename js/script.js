@@ -1,40 +1,34 @@
-function ageCalculation(){
-    var _today = new Date();
+function bmiCalculation(){
 
-    var _day = _today.getDate();
-    var _month = _today.getMonth()+1;
-    var _year = _today.getFullYear();
+    var _weight = parseInt(document.getElementById('weight').value);
+    var _height_f = parseInt(document.getElementById('height-f').value);
+    var _height_i = parseInt(document.getElementById('height-i').value);
 
-    var _b_day = document.getElementById('b_day').value;
-    var _b_month = document.getElementById('b_month').value;
-    var _b_year = document.getElementById('b_year').value;
+    var _bmi = _weight/((((_height_f*12)+_height_i)*0.0254)*(((_height_f*12)+_height_i)*0.0254));
 
-    if(_day<_b_day){
-        final_day = ((_day+30)-_b_day);
-        final_month = _month - 1;
-        if(final_month<_b_month){
-            final_month = ((final_month+12)-_b_month);
-            final_year = ((_year - 1)-_b_year);
-        }else{
-            final_month = (final_month-_b_month);
-            final_year = _year-_b_year;
-        }
-    }else if(_month<_b_month){
-        final_day = (_day-_b_day);
-        final_month = ((_month+12)-_b_month);
-        final_year = ((_year - 1)-_b_year);
+    _bmi = _bmi.toFixed(2);
+
+    document.getElementById("show_bmi").innerHTML=_bmi;
+
+    if(_bmi<18.5){
+        document.getElementById("status_bmi").innerHTML="Underweight";
+        document.getElementById("show_color").classList.add('color_y');
+    }else if(_bmi>=18.5 && _bmi<=25){
+        document.getElementById("status_bmi").innerHTML="Notmal Weight";
+        document.getElementById("show_color").classList.add('color_dg');
+    }else if(_bmi>=25 && _bmi<=30){
+        document.getElementById("status_bmi").innerHTML="Overweight";
+        document.getElementById("show_color").classList.add('color_g');
+    }else if(_bmi>30){
+        document.getElementById("status_bmi").innerHTML="Obese";
+        document.getElementById("show_color").classList.add('color_r');
     }else{
-        final_day = _day-_b_day;
-        final_month = _month-_b_month;
-        final_year = _year-_b_year;
+        document.getElementById("status_bmi").innerHTML="Wrong Input";
+        document.getElementById("show_color").classList.add('output_r');
     }
 
-    document.getElementById("out_day").innerHTML=final_day+1;
-    document.getElementById("out_month").innerHTML=final_month;
-    document.getElementById("out_year").innerHTML=final_year;
-
     document.getElementById("show").classList.add('output_show');
-}
+};
 
 function reload(){
     location.reload();

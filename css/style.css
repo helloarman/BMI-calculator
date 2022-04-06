@@ -42,7 +42,7 @@ body{
 
 .main{
 	height: 270px;
-	width: 500px;
+	width: 600px;
 	margin: auto;
 }
 
@@ -50,6 +50,11 @@ body{
 	background-color: #FFBD35;
 	padding: 60px 40px;
 	border-radius: 10px;
+	margin: auto;
+}
+
+.form-row{
+	margin: auto;
 }
 
 h1{
@@ -58,18 +63,17 @@ h1{
 }
 
 .output_block{
-	width: 50px;
-	height: 50px;
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 5px;
-	margin: 0 10px;
 	font-size: 10px;
 	font-weight: 800;
 }
 
 .output{
 	display: none;
+	background-color: #fff;
+	height: 150px;
+	weight: 50px;
+	margin-top: 10px;
+	border-radius: 5px;
 }
 
 .output_show{
@@ -81,3 +85,27 @@ h2{
 	font-weight: 800;
 }
 
+.color{
+	padding: 10px 50px;
+	border-radius: 5px;
+}
+
+.color_y{
+ background-color: #FFD124;
+ color: #191919;
+}
+
+.color_dg{
+	background-color: #357C3C;
+	color: #fff;
+}
+
+.color_g{
+	background-color: #69bd71;
+	color: #fff;
+}
+
+.color_r{
+	background-color: #B33030;
+	color: #fff;	
+}
